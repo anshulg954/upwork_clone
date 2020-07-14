@@ -1,0 +1,9 @@
+div.container {
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+div.container div {
+    display: inline-block;
+    margin: 10px;
+}

@@ -1,0 +1,497 @@
+body {
+    margin: 0px;
+    background-color: #F9F9F9;
+    font-family: Gotham SSm, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.navbar_header {
+    width: 100%;
+    height: 55px;
+    background: white;
+    padding-top: 12px;
+    position: relative;
+    border-bottom: 1px solid darkgray;
+    box-shadow: 0px 0px 5px darkgray;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo_img {
+    position: relative;
+    margin-left: 100px;
+    float: left;
+}
+
+.logo_img img {
+    width: 100px;
+    height: 50px;
+}
+
+.srch_box {
+    margin-top: 3px;
+    position: relative;
+}
+
+.srch_box input[type=search] {
+    padding-top: 2px;
+    padding-left: 50px;
+    width: 320px;
+    height: 40px;
+    margin-left: 15px;
+    position: absolute;
+}
+
+.srch_box i {
+    position: absolute;
+    left: 230px;
+    top: 13px;
+    color: #008329;
+}
+
+.navbar_nav {
+    float: right;
+    top: 0px;
+}
+
+.navbar_nav ul {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.navbar_nav ul li {
+    float: left;
+    margin-right: 30px;
+}
+
+.navbar_nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar_nav ul li a:hover {
+    color: #37a000;
+}
+
+.PAJ a {
+    background: #37a000;
+    width: 110px;
+    height: 25px;
+    float: right;
+    margin-right: 200px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding-top: 7px;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.PAJ a:hover {
+    box-shadow: 3px 3px 5px darkgrey;
+    transition: 0.1s;
+    background-color: #008329;
+}
+
+.navbar_sub {
+    width: 100%;
+    height: 30px;
+    background: F9F9F9;
+}
+
+.navbar_sub ul {
+    list-style: none;
+    margin-left: 56px;
+}
+
+.navbar_sub ul li {
+    float: left;
+    margin-left: 42px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.hero_header {
+    width: 100%;
+    height: 450px;
+    background-image: url("http://www.upwork.com/ab/assets/Adquiro/54c96a8/wp/images/xl.f3006adb3e98.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero_header_content {
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    transition: 1s;
+}
+
+.hero_header_content h1 {
+    margin: 0px;
+    color: white;
+    font-family: Canela Deck Bold;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.hero_header_content p {
+    font-family: Gotham SSm, Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.GS {
+    background: #37a000;
+    color: white;
+    float: left;
+    border-radius: 3px;
+    padding-top: 16px;
+}
+
+.GD {
+    background: white;
+    color: #37a000;
+    float: left;
+    margin-left: 14px;
+    border-radius: 3px;
+    padding-top: 16px;
+}
+
+.GS a {
+    text-decoration: none;
+    display: table-cell;
+    width: 150px;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+    color: white;
+}
+
+.GD a {
+    text-decoration: none;
+    display: table-cell;
+    width: 150px;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+    color: #37a000;
+}
+
+.frlncr_agnc {
+    margin: 0 auto;
+    width: 90%;
+    height: 600px;
+}
+
+.frlncr_agnc h4 {
+    font-size: 19px;
+    font-weight: 100;
+}
+
+.prgh {
+    line-height: 120px;
+    text-align: center;
+}
+
+.prgh a {
+    color: #37a000;
+    text-decoration: none;
+}
+
+.common {
+    width: 282px;
+    height: 205px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px darkgray;
+}
+
+.common h4 {
+    line-height: 23px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: inherit;
+    text-align: center;
+}
+
+.web {
+    float: left;
+}
+
+.design {
+    float: left;
+    margin-left: 30px;
+}
+
+.writing {
+    float: left;
+    margin-left: 30px;
+}
+
+.marketing {
+    float: left;
+    margin-left: 30px;
+}
+
+.admin {
+    float: left;
+    margin-top: 30px;
+}
+
+.customer {
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.science {
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.engineer {
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.trusted {
+    width: 100%;
+    height: 200px;
+    background: white;
+}
+
+.trusted h4 {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 100;
+    padding-top: 30px;
+}
+
+.trusted img {
+    margin-left: 120px;
+}
+
+.scope {
+    margin: 0 auto;
+    width: 90%;
+    height: 200px;
+}
+
+.scope h3 {
+    line-height: 260px;
+    font-size: 21px;
+    float: left;
+}
+
+.scope_content {
+    float: right;
+    background-color: white;
+    width: 70%;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.complex {
+    width: 33%;
+    height: 140px;
+    float: left;
+    margin-top: 30px;
+    border-right: 2px solid darkgray;
+}
+
+.longer {
+    width: 33%;
+    height: 140px;
+    float: left;
+    margin-top: 30px;
+    border-right: 2px solid darkgray;
+    margin-left: 2px;
+}
+
+.short {
+    width: 33%;
+    height: 140px;
+    float: right;
+    margin-top: 30px;
+}
+
+.scope h4 {
+    font-size: 16px;
+    padding: 35px 0px 0px 15px;
+    margin: 0px;
+}
+
+.scope p {
+    padding: 0px 20px 0px 15px;
+    font-size: 15px;
+}
+
+.work {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    margin-top: 100px;
+}
+
+.work h1 {
+    font-size: 42px;
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 30px;
+}
+
+.box {
+    width: 280px;
+    height: 350px;
+    float: left;
+    margin-left: 80px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    background: #1D4354;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 22px;
+}
+
+.offering {
+    width: 90%;
+    height: 700px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.offering h1 {
+    font-size: 40px;
+}
+
+.offering p {
+    font-size: 16px;
+}
+
+.con {
+    margin: 0 auto;
+    width: 86%;
+}
+
+.offering_box {
+    width: 260px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 1px 3px 6px darkgray;
+    float: left;
+    margin-left: 30px;
+}
+
+.offering_box h4 {
+    font-size: 16px;
+}
+
+.offering_box p {
+    font-size: 15px;
+}
+
+.offering_box hr {
+    margin-top: 50px;
+}
+
+.btn {
+    margin: 0 auto;
+    width: 140px;
+    height: 40px;
+    background-color: #37a000;
+    border-radius: 3px;
+    box-shadow: 0px 3px 4px darkgray;
+    cursor: pointer;
+}
+
+.btn h4 {
+    color: white;
+    line-height: 37px;
+    font-weight: 100;
+}
+
+.offering_box ul li {
+    font-size: 16px;
+    text-align: left;
+    padding: 20px 22px 0px 0px;
+    list-style-type: none;
+}
+
+.gray {
+    background-color: #494949;
+    width: 100%;
+    height: 470px;
+}
+
+.video_title {
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+.video_title h1 {
+    font-size: 42px;
+    font-weight: 800;
+    padding: 70px 0px 0px 60px;
+    color: white;
+}
+
+.video_title p {
+    padding: 7px 10px 0px 60px;
+    font-size: 18px;
+    font-style: italic;
+    color: lightgray;
+}
+
+.video {
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+iframe {
+    padding: 50px 0px 0px 0px;
+    width: 550px;
+    height: 380px;
+}
+
+.footer {
+    height: 500px;
+    width: 100%;
+    margin-top: 100px;
+    background: #1D4354;
+    text-align: center;
+    padding-top: 20px;
+    color: lightgray;
+}
+
+.cont {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.cont ul li {
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 15px;
+    padding-left: 60px;
+}
+
+.ul {
+    float: left;
+    width: 350px;
+}

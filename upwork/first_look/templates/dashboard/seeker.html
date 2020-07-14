@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>In-demand talent on demand.&trade; Upwork is how.&trade;</title>
+    <link rel="stylesheet" href="../../static/first_look/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../../static/first_look/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" href="../../static/first_look/images/upworktitle.png">
+</head>
+
+<body>
+    <div class="navbar_header">
+        <div class="logo_img">
+            <img src="./images/logo.png">
+        </div>
+        <div class="srch_box">
+            <input type="search" name="srch" placeholder="Find Professionals & Agencies">
+            <i class="fas fa-search"></i>
+        </div>
+
+    </div>
+    <div class="navbar_sub">
+        <ul>
+            <li>Web Dev</li>
+            <li>Mobile Dev</li>
+            <li>Design</li>
+            <li>Writing</li>
+            <li>Admin Support</li>
+            <li>Custom Service</li>
+            <li>Marketing</li>
+            <li>Accounting</li>
+            <li>See All Categories</li>
+        </ul>
+    </div>
+    <div style="height:40px"></div>
+    <div style="margin-left:50%;">
+        <h1>{{ job_type }}</h1>
+    </div>
+    <div style="margin-left:20%;">
+        <h1>Here's a list of available Jobs with their description below:</h1>
+    </div>
+    <div clas="container">
+        {% for job in jobs %}
+        <div class="card" style="display: inline-block;margin: 40px;">
+            <div class="card-header">
+                Company Name : {{ job.company_name }}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">
+                    Location : {{ job.location }}
+                </h5>
+                <p class="card-text">
+                    Services : {{ job.services }}
+                </p>
+                <p class="card-text">
+
+                    Income : {{ job.income }}
+                </p>
+                <a href="#" class="btn btn-primary">Submit Resume</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    </div>
+    <div class="footer">
+
+
+        <div class="cont">
+            <p>Looking to hire for long-term or full-time assignments? See how<a href="#" style="color: lightgray;"> Upwork Payroll</a> simplifies admin.</p>
+
+            <hr>
+            <div class="ul">
+
+                <ul>
+                    <li>COMPANY</li>
+                    <br>
+                    <li>About Us</li>
+                    <li> Investor Relations</li>
+                    <li> Careers</li>
+                    <li> Press</li>
+                    <li> Trust & Safety</li>
+                    <li> Trust & Safety</li>
+                    <li> Terms of Service</li>
+                    <li> Privacy Policy</li>
+                    <li>Accessibility</li>
+                </ul>
+            </div>
+
+            <div class="ul">
+                <ul>
+                    <li> RESOURCES</li>
+                    <br>
+                    <li> Customer Support</li>
+                    <li>Hiring Headquarters</li>
+                    <li> Hiring Resources</li>
+                    <li> Upwork Blog</li>
+                    <li> Customer Stories</li>
+                    <li> Business Resources</li>
+                    <li> Payroll Services</li>
+                </ul>
+            </div>
+
+            <div class="ul">
+                <ul>
+                    <li> BROWSE</li>
+                    <br>
+                    <li>Freelancers by Skill</li>
+                    <li>Freelancers in USA</li>
+                    <li>Freelancers in UK</li>
+                    <li>Freelancers in Canada</li>
+                    <li>Freelancers in Australia</li>
+                    <li>Jobs in USA</li>
+                    <li>Find Jobs</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="{% static 'first_look/images/favicon.png' %}" /> {% block css_links %} {% endblock %}
+    <link rel="stylesheet" href="{% static 'first_look/css/employee.css' %}">
+    <title>UpWork</title>
+</head>
+<!-- it it working in the snerio -->
+
+<body>
+
+    <h2 style="text-align: center;padding-top: 50px;">File a Job, hire a the talent.</h2>
+    <div class="contianer" style="width: 50%;margin-top: 50px;margin-left: 380px;border: 2px solid black;">
+        <!-- main code -->
+
+        <div class="alert alert-warning" role="alert">
+            {{ alert_message }}
+        </div>
+        <form autocomplete="off" method="post" action="{% url 'FileJob' %}" style="margin: 10px;">
+            {% csrf_token %}
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                </div>
+                <input name="company_name" class="form-control" placeholder="Company name" type="text">
+            </div>
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                </div>
+                <input name="income" class="form-control" placeholder="income" type="text">
+            </div>
+            <div class="form-group input-group">
+                <input name="location" class="form-control" placeholder="Location" type="text">
+            </div>
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                </div>
+                <select class="form-control" name="user_profile"> 
+    <option selected=""> Select job type</option>
+    <option>Designer</option>
+    <option>Manager</option>
+    <option>Accounting</option>
+    <option>Web Designer</option>
+    <option>Software Engineer</option>
+    <option>Other</option>
+</select>
+            </div>
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                </div>
+                <input name="services" class="form-control" placeholder="services" type="text">
+            </div>
+
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                </div>
+                <input name="des" class="form-control" placeholder="email" type="email">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" autocomplete="off" class="btn btn-primary btn-block" style="background-color:green;text-color:white;" />
+            </div>
+        </form>
+    </div>
+
+
+    <!-- main  code -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

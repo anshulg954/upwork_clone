@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>In-demand talent on demand.&trade; Upwork is how.&trade;</title>
+    <link rel="stylesheet" href="../../static/first_look/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../../static/first_look/css/all.min.css">
+    <link rel="icon" href="../../static/first_look/images/upworktitle.png">
+</head>
+
+<body>
+    <div class="navbar_header">
+        <div class="logo_img" style="padding-right: 20px;">
+            <img src="../../static/first_look/images/upworkfoto.png">
+        </div>
+        <div class="container">
+            <h1 style="text-align: right;padding-right: 20px;">
+                Welcome {{ first_name }}
+            </h1>
+        </div>
+
+
+    </div>
+    <div class="hero_header" style="background-image: url('../../static/first_look/images/bg.png');">
+        <div class="hero_header_content">
+
+            <h1 style="font-size:50px">In-demand talent <br>on demand.&trade;</h1>
+            <h1>Upwork is how.&trade;</h1>
+            <p>Upwork expertly connects professionals and agencies to <br>businesses seeking specialized talent..</p>
+            <br>
+            <div class="GS"><a href="#">Get Started</a></div>
+            <div class="GD"><a href="#">Get a demo</a></div>
+
+
+        </div>
+    </div>
+    <div class="frlncr_agnc">
+        <h4>Find quality talent or agencies</h4>
+        <a href="{% url 'webjobs' %}" target="_blank">
+            <div class="web common"><img src="https://assets.static-upwork.com/assets/Adquiro/69c7a0a/wp/images/development@2x.29e32cef0ea0.svg">
+                <h4>Web, Mobile & Software Dev</h4>
+            </div>
+        </a>
+
+        <a href="{% url 'DesJobs' %}" target="_blank">
+            <div class="design common"><img src="https://assets.static-upwork.com/assets/Adquiro/69c7a0a/wp/images/design-creative@2x.109353b3474a.svg">
+                <h4>Design & Creative</h4>
+            </div>
+        </a>
+
+        <a href="{% url 'OtherJobs' %}" target="_blank">
+            <div class="writing common"><img src="https://assets.static-upwork.com/assets/Adquiro/69c7a0a/wp/images/writing@2x.1b7ea27c96c3.svg">
+                <h4>Writing</h4>
+            </div>
+        </a>
+
+
+        <a href="{% url 'ManagerJobs' %}" target="_blank">
+            <div class="marketing common"><img src="https://assets.static-upwork.com/assets/Adquiro/69c7a0a/wp/images/marketing-sales@2x.ebb7dd9ca8bc.svg">
+                <h4>Sales & Marketing</h4>
+            </div>
+        </a>
+
+
+        <a href="{% url 'AccountJobs' %}" target="_blank">
+            <div class="admin common"><img src="https://assets.static-upwork.com/assets/Adquiro/69c7a0a/wp/images/admin-support@2x.ff2e0d4dc35d.svg">
+
+                <h4>Admin Support</h4>
+            </div>
+        </a>
+
+
+
+        <a href="{% url 'ManagerJobs' %}" target="_blank">
+            <div class="customer common"><img src="https://assets.static-upwork.com/assets/Adquiro/69c7a0a/wp/images/customer-service@2x.22b35df5315c.svg">
+                <h4>Customer Service</h4>
+            </div>
+        </a>
+
+        <a href="{% url 'SeJobs' %}" target="_blank">
+            <div class="science common"><img src="https://assets.static-upwork.com/assets/Adquiro/69c7a0a/wp/images/data-science@2x.b4305128dde6.svg">
+                <h4>Data Science & Analytics</h4>
+            </div>
+        </a>
+
+        <a href="{% url 'SeJobs' %}" target="_blank">
+            <div class="engineer common"><img src="https://assets.static-upwork.com/assets/Adquiro/69c7a0a/wp/images/engineering-architecture@2x.85b023c99e9f.svg">
+                <h4>Engineering & Architecture</h4>
+            </div>
+        </a>
+
+    </div>
+    <div class="prgh">
+        <p>Don’t see what you’re looking for? <a href="#" style="color:green">See all categories</a></p>
+    </div>
+    <div class="trusted">
+        <h4>Trusted by 5M+ businesses</h4>
+        <img src="https://assets.static-upwork.com/assets/Adquiro/4e110ab/images/719fe55.svg">
+        <img src="https://assets.static-upwork.com/assets/Adquiro/4e110ab/images/6ab4d0f.svg" alt="">
+        <img src="https://assets.static-upwork.com/assets/Adquiro/4e110ab/images/814d018.svg" alt="">
+        <img src="https://assets.static-upwork.com/assets/Adquiro/4e110ab/images/ed7422f.svg" alt="">
+        <img src="https://assets.static-upwork.com/assets/Adquiro/4e110ab/images/1c2512c.svg" alt="">
+        <img src="https://assets.static-upwork.com/assets/Adquiro/4e110ab/images/c32b982.svg" alt="">
+    </div>
+
+    <div class="scope">
+        <h3>Hire for any scope</h3>
+        <div class="scope_content">
+
+            <div class="complex">
+                <h4>Complex project</h4>
+                <p>Find specialized experts and agencies for large projects.</p>
+            </div>
+            <div class="longer">
+                <h4>Longer-term contract</h4>
+                <p>Expand your team with a skilled resource.</p>
+            </div>
+            <div class="short">
+                <h4>Short term</h4>
+                <p>Build a pool of diverse experts for one-off tasks.</p>
+            </div>
+        </div>
+    </div>
+    <div class="work">
+        <br>
+        <h1>How it works</h1>
+        <div class="box">
+            <div class="circle"></div>
+            <h4>Post a job (it’s free)</h4>
+            <p>Tell us about your project. Upwork connects you with top freelancers and agencies around the world, or near you.</p>
+        </div>
+
+        <div class="box">
+            <div class="circle"></div>
+            <h4>Bids come to you</h4>
+            <p>Get qualified proposals within 24 hours. Compare bids, reviews, and prior work. Interview favorites and hire the best fit.</p>
+        </div>
+        <div class="box">
+            <div class="circle"></div>
+            <h4>Collaborate easily</h4>
+            <p>Use Upwork to chat or video call, share files, and track project milestones from your desktop or mobile.</p>
+        </div>
+        <div class="box">
+            <div class="circle"></div>
+            <h4>Payment simplified</h4>
+            <p>Pay hourly or fixed-price and receive invoices through Upwork. Pay for work you authorize.</p>
+        </div>
+    </div>
+    <br>
+    <div class="offering">
+        <h1>Choose the offering that works best for you</h1>
+        <p>All options include access to Upwork’s talent pool of top-quality freelancers and agencies.</p>
+        <div class="con">
+
+            <div class="offering_box">
+                <h4>Basic</h4>
+                <div class="btn">
+                    <h4>Select Basic</h4>
+                </div>
+                <p>Free*</p>
+                <hr>
+                <ul>
+                    <li>Verified work history and reviews</li>
+                    <li>Unlimited proposals</li>
+                    <li>Built-in collaboration tools and easy payments</li>
+                </ul>
+            </div>
+
+
+            <div class="offering_box">
+                <h4>Plus</h4>
+                <div class="btn">
+                    <h4>Select Basic</h4>
+                </div>
+                <p><b>$49.99</b>/month*</p>
+                <hr>
+                <ul>
+                    <li>Dedicated account managers to help you find and hire quality talent fast</li>
+                    <li>Project tracking and collaboration tools for teams</li>
+                    <li>Tailored search results featuring Top Rated and Rising Talent</li>
+                </ul>
+            </div>
+
+
+            <div class="offering_box">
+                <h4>Business</h4>
+                <div class="btn">
+                    <h4>Contact Us</h4>
+                </div>
+                <p><b>$499</b>/month*</p>
+                <hr>
+                <ul>
+                    <li>Consolidated billing and invoicing with net 30 pay</li>
+                    <li>Dedicated team of advisors to get you hiring faster and more successfully</li>
+                    <li>Detailed reporting with company insights and trends</li>
+                </ul>
+            </div>
+
+
+            <div class="offering_box">
+                <h4>Enterprise</h4>
+                <div class="btn">
+                    <h4>Contact Us</h4>
+                </div>
+                <p>Price varies - contact us for a demo</p>
+                <hr>
+                <ul>
+                    <li>Custom configurable contracting and onboarding process</li>
+                    <li>Worker classification compliance services</li>
+                    <li>Project-based or managed solutions, and dedicated account executive</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="gray">
+        <div class="video_title">
+
+            <h1>Instapage saved $2.3M with Upwork</h1>
+            <p><q>"Upwork took a lot of stress off of growing with minimal resources"</q></p>
+        </div>
+        <div class="video">
+
+            <iframe src="https://www.youtube.com/embed/PLzDZ9N9l7Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+    </div>
+    <div class="footer">
+
+
+        <div class="cont">
+            <p>Looking to hire for long-term or full-time assignments? See how<a href="#" style="color: lightgray;"> Upwork Payroll</a> simplifies admin.</p>
+
+            <hr>
+            <div class="ul">
+
+                <ul>
+                    <li>COMPANY</li>
+                    <br>
+                    <li>About Us</li>
+                    <li> Investor Relations</li>
+                    <li> Careers</li>
+                    <li> Press</li>
+                    <li> Trust & Safety</li>
+                    <li> Trust & Safety</li>
+                    <li> Terms of Service</li>
+                    <li> Privacy Policy</li>
+                    <li>Accessibility</li>
+                </ul>
+            </div>
+
+            <div class="ul">
+                <ul>
+                    <li> RESOURCES</li>
+                    <br>
+                    <li> Customer Support</li>
+                    <li>Hiring Headquarters</li>
+                    <li> Hiring Resources</li>
+                    <li> Upwork Blog</li>
+                    <li> Customer Stories</li>
+                    <li> Business Resources</li>
+                    <li> Payroll Services</li>
+                </ul>
+            </div>
+
+            <div class="ul">
+                <ul>
+                    <li> BROWSE</li>
+                    <br>
+                    <li>Freelancers by Skill</li>
+                    <li>Freelancers in USA</li>
+                    <li>Freelancers in UK</li>
+                    <li>Freelancers in Canada</li>
+                    <li>Freelancers in Australia</li>
+                    <li>Jobs in USA</li>
+                    <li>Find Jobs</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
